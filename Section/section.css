@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100;
+  padding: 10%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+@media (min-width: 601px) {
+  .section-card-container1 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'image1 content1 content1';
+  }
+  .section-card-container2 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'content2 content2 image2';
+  }
+  #section-card-content {
+    margin: 2em 0;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-justify: newspaper;
+  }
+  #section-card-content .section-title {
+    margin: 0 0 1em 0;
+  }
+  #section-card-image {
+    height: auto;
+    margin: 2em 0;
+  }
+  #section-card-image .section-image {
+    width: 400px;
+
+    object-fit: contain;
+  }
+  .image1 {
+    grid-area: image1;
+  }
+  .content1 {
+    grid-area: content1;
+  }
+  .image2 {
+    grid-area: image2;
+  }
+  .content2 {
+    grid-area: content2;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-card-container1 {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-card-container2 {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #section-card-content {
+    margin: 1em 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #section-card-content .section-title {
+    margin: 0 0 1em 0;
+  }
+  #section-card-image {
+    height: auto;
+    margin: 1em 0;
+  }
+  #section-card-image .section-image {
+    width: 100%;
+  }
+}

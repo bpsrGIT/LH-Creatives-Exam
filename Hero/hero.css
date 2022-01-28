@@ -16,6 +16,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  object-fit: contain;
+  overflow: hidden;
 }
 
 .hero-container .hero-text {
@@ -32,4 +34,3 @@
     height: 100vh;
   }
 }
-/*# sourceMappingURL=hero.css.map */

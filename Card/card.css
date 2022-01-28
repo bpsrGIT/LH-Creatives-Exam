@@ -16,6 +16,10 @@
   object-fit: contain;
 }
 
+#card-section h2 {
+  margin: 2rem 0;
+}
+
 #card-section .small-card-container {
   display: grid;
   height: auto;

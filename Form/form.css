@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+  /* Colors: */
+  --background-color: #eeeeee;
+  --border-color: #aaaaaa;
+  --text-color: #333333;
+  --main-yellow: #fff000;
+  --button-red: #e3007f;
+  /* Font/text values */
+  --unnamed-font-family-roboto: 'Roboto';
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-size-16: 16px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-line-spacing-24: 24px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100;
+  padding: 10%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+@media (min-width: 601px) {
+  h1 {
+    margin: 2rem 0;
+  }
+  #form .category {
+    width: 100;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #form .category .label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 72px;
+    width: 143px;
+    background-color: var(--background-color);
+    vertical-align: center;
+    padding: 0 0 0 1rem;
+    border: none;
+  }
+  #form .category .inputField {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+  }
+  #form .category .inputField input {
+    height: 42px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    border-radius: 5px;
+  }
+  #form .category .checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+  }
+  #form .category .checkbox input,
+  #form .category .checkbox label {
+    margin: 0 0.5rem;
+  }
+  #form .category .checkbox input[type='checkbox'],
+  #form .category .checkbox input[type='radio'] {
+    accent-color: var(--button-red);
+    height: 20px;
+    width: 20px;
+  }
+  #form .submit {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+  }
+  #form .submit input[type='submit'] {
+    margin: 2rem auto;
+    background-color: var(--button-red);
+    color: var(--background-color);
+    height: 50px;
+    width: 182px;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    margin: 2rem 0;
+  }
+  #form .category {
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #form .category .label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 51px;
+    width: 100%;
+    background-color: var(--background-color);
+    vertical-align: center;
+    padding: 0 0 0 1rem;
+    border: none;
+  }
+  #form .category input {
+    margin: 1em 0;
+    height: 51px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    border-radius: 5px;
+  }
+  #form .category .checkbox {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  #form .category .checkbox .align {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #form .category .checkbox input[type='checkbox'],
+  #form .category .checkbox input[type='radio'] {
+    accent-color: var(--button-red);
+    height: 20px;
+    width: 20px;
+    margin: 0.5rem;
+  }
+  #form .submit {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+  }
+  #form .submit input[type='submit'] {
+    margin: 2rem auto;
+    background-color: var(--button-red);
+    color: var(--background-color);
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+  }
+}
